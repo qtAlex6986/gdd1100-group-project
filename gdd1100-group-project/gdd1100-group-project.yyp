@@ -3,9 +3,11 @@
   "resourceVersion": "1.6",
   "name": "gdd1100-group-project",
   "resources": [
+    {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":2,},
     {"id":{"name":"oPCParent","path":"objects/oPCParent/oPCParent.yy",},"order":2,},
     {"id":{"name":"oPC","path":"objects/oPC/oPC.yy",},"order":0,},
     {"id":{"name":"sFloor","path":"sprites/sFloor/sFloor.yy",},"order":1,},
+    {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":3,},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},"order":1,},
     {"id":{"name":"sPC","path":"sprites/sPC/sPC.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
