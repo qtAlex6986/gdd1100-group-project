@@ -9,6 +9,7 @@
     {"id":{"name":"sFloor","path":"sprites/sFloor/sFloor.yy",},"order":1,},
     {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"order":3,},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},"order":1,},
+    {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"order":4,},
     {"id":{"name":"sPC","path":"sprites/sPC/sPC.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
