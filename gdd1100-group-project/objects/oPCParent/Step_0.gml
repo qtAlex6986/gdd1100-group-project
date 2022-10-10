@@ -46,6 +46,5 @@ if (!isHurt) {
 	x += xSpeed;
 	y += ySpeed
 } else {
-	//isHurt = true;
-	//alarm[0] = 60;
+	//add knockback aniamtion
 }
