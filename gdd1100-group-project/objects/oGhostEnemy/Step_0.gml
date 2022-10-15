@@ -6,10 +6,10 @@ var collisionRadius = collision_rectangle(x + -200, y + -200, x + 200, y + 200, 
 //If collision of this proxy. is true, then the ghost starts going towards the Pc
 if((collisionRadius)){
 	speed = 4;
-	direction = point_direction(x, y, oPC.x, oPC.y);
+	direction = point_direction(x, y, oPC.x + 1, oPC.y + 1);
 	
 }
-//If the player is not in this radius, the Ghost flys in a circle
+//If the player is not in this radius, the Ghost sits idle
 else {
 	speed = 0;
 	//Maybe add sleep idle? If the pc character is not colliding,
