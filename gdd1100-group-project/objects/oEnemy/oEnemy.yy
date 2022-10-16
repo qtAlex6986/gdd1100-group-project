@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "oEnemy",
   "spriteId": {
-    "name": "sEnemy",
-    "path": "sprites/sEnemy/sEnemy.yy",
+    "name": "sSlime_Sprite_Sheet",
+    "path": "sprites/sSlime_Sprite_Sheet/sSlime_Sprite_Sheet.yy",
   },
   "solid": false,
   "visible": true,
