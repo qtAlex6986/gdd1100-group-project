@@ -1,0 +1,8 @@
+gravity_direction = 270; 
+
+
+ direction = 0;
+//speed = 1; 
+
+setOnceDir = false; 
+jumpTimer = 90; 

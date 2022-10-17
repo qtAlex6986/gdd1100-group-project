@@ -1,0 +1,16 @@
+jumpTimer --; 
+if (jumpTimer <= 0) { 
+
+	if (direction == 0) {direction = 45} 
+	if (direction == 180) {direction = 135} 
+
+//jumpTimer = irandom_range(3,4); 
+
+speed = 5; 
+gravity = 0.1; 
+jumpTimer = 90;
+
+alarm[0] =70;
+
+
+}
