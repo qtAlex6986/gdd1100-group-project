@@ -25,10 +25,10 @@ if (image_index == 0 && accept) {
 
 //if MENU is selected, go to menu room
 if (image_index == 1 && accept) {
-	room_goto(rMenu);
+	image_index = 3;
 }
 
 //if F is pressed, go back
 if (back) {
-	room_goto(rStartRoom);
+	image_index = 0;
 }

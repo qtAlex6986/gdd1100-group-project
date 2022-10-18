@@ -3,6 +3,7 @@ walkspd = 5;
 hsp = walkspd; 
 
 /// Enemy Hp 
-maxHp = 5; 
-currentHp = maxHp;
+currentHp = 5;
+maxHp = currentHp; 
+
 

@@ -1,5 +1,5 @@
 /// Enemy Speed 
-walkspd = 5; 
+walkspd = 3; 
 hsp = walkspd; 
 
 /// Enemy Hp 

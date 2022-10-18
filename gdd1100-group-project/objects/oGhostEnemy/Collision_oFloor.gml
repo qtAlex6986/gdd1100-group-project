@@ -1,3 +1,3 @@
 //Collision with Wall
 
-x = -2;
+//x = -2;
