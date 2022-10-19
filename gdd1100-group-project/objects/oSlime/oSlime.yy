@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnemy",
+  "name": "oSlime",
   "spriteId": {
     "name": "sSlime_Sprite_Sheet",
     "path": "sprites/sSlime_Sprite_Sheet/sSlime_Sprite_Sheet.yy",
@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Enemy",
+    "path": "folders/Objects/Enemy.yy",
   },
 }

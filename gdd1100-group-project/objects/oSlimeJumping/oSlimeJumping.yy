@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oPC",
+  "name": "oSlimeJumping",
   "spriteId": {
-    "name": "sPC",
-    "path": "sprites/sPC/sPC.yy",
+    "name": "sSlimeJump",
+    "path": "sprites/sSlimeJump/sSlimeJump.yy",
   },
   "solid": true,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oPCParent",
-    "path": "objects/oPCParent/oPCParent.yy",
+    "name": "oEnemyParent",
+    "path": "objects/oEnemyParent/oEnemyParent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,15 +28,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [
     {"x":0.0,"y":0.0,},
-    {"x":64.0,"y":0.0,},
-    {"x":64.0,"y":64.0,},
-    {"x":0.0,"y":64.0,},
+    {"x":32.0,"y":0.0,},
+    {"x":32.0,"y":32.0,},
+    {"x":0.0,"y":32.0,},
   ],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "Enemy",
+    "path": "folders/Objects/Enemy.yy",
   },
 }
