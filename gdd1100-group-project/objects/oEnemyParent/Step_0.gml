@@ -1,12 +1,15 @@
 /// Enemy changes direction upon collision 
 
-if (place_meeting(x + hsp, y, oFloor)) 
+if (place_meeting(x + walkSpeed, y, oFloor)) 
 {
-	while (!place_meeting(x + sign(hsp), y, oFloor))
-	{ 
-		x = x + sign(hsp);
-	}
-	hsp = -hsp; 
+	walkSpeed = -walkSpeed; 
 } 
+if (place_meeting(x + walkSpeed, y, oPCParent)) {
+	walkSpeed *= -1
+	hp--;
+	if (hp <= 0) {
+		instance_destroy();
+	}
+}
 
-x = x + hsp; 
+x += walkSpeed; 
