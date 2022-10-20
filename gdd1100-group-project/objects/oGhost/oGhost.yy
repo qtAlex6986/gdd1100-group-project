@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oGhostEnemy",
+  "name": "oGhost",
   "spriteId": {
     "name": "sGhostIdle",
     "path": "sprites/sGhostIdle/sGhostIdle.yy",
