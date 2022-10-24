@@ -6,7 +6,7 @@ var collisionRadius = collision_rectangle(x + -400, y + -400, x + 400, y + 400, 
 //If collision of this proxy. is true, then the ghost starts going towards the Pc
 if((collisionRadius)){
 	speed = 4;
-	direction = point_direction(x, y, oPC.x , oPC.y + 10 );
+	direction = point_direction(x, y, oPC.x , oPC.y - 10 );
 	sprite_index = sGhostFollowing;
 }
 //If the player is not in this radius, the Ghost sits idle
@@ -19,9 +19,9 @@ else {
 
 //Controls Sprite Index
 if(hspeed > 0){
-	image_xscale = 1;
+	image_xscale = -2;
 }
 else if (hspeed < 0){
-	image_xscale = -1;
+	image_xscale = 2;
 }
 
