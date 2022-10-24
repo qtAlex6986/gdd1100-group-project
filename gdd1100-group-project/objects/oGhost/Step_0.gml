@@ -1,8 +1,8 @@
+
 //This sets up the collision proxy. 
 //The first 4 integers define the size. In this case, our 
 //rectangle is 400x400 relative to the object 
 var collisionRadius = collision_rectangle(x + -400, y + -400, x + 400, y + 400, oPC, true, 1);
-
 //If collision of this proxy. is true, then the ghost starts going towards the Pc
 if((collisionRadius)){
 	speed = 4;
@@ -24,4 +24,5 @@ if(hspeed > 0){
 else if (hspeed < 0){
 	image_xscale = 2;
 }
+
 
