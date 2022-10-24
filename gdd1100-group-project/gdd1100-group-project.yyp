@@ -18,6 +18,7 @@
     {"id":{"name":"sGhostFollowing","path":"sprites/sGhostFollowing/sGhostFollowing.yy",},"order":1,},
     {"id":{"name":"oSlimeJumping","path":"objects/oSlimeJumping/oSlimeJumping.yy",},"order":5,},
     {"id":{"name":"oEnemyTest","path":"objects/oEnemyTest/oEnemyTest.yy",},"order":1,},
+    {"id":{"name":"sConceptBackgroundSprite","path":"sprites/sConceptBackgroundSprite/sConceptBackgroundSprite.yy",},"order":11,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":3,},
     {"id":{"name":"sSlime_Sprite_Sheet","path":"sprites/sSlime_Sprite_Sheet/sSlime_Sprite_Sheet.yy",},"order":0,},
     {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"order":4,},
