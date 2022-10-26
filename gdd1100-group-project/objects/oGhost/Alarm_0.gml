@@ -1,5 +1,5 @@
 frightened = true;
 
-direction = point_direction(x, y, oPC.x + 40 , oPC.x + 40);
+direction = point_direction(x, y, oPC.x + frightenedRunDistance , oPC.x + frightenedRunDistance);
 speed = 1.5;
 

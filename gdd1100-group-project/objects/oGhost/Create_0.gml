@@ -2,5 +2,5 @@
 hp = 7;
 
 frightened = false;
-frightenedTimer = 60;
+frightenedTimer = 300;
 frightenedRunDistance = 50;
