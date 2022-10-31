@@ -1,4 +1,4 @@
-
+hp = 5;
 
 ySpeed = 0;
 xSpeed = 0;

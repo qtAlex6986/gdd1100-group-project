@@ -101,5 +101,9 @@ if (!isHurt && place_meeting(x, y, oEnemyParent)) {
 	isHurt = true;
 	hp--;
 	//show_message(hp);
+	if(hp==0) {
+		show_message(hp);
+		game_end();
+	}
 	
 }

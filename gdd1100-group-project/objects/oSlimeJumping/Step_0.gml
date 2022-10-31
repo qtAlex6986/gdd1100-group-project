@@ -1,42 +1,59 @@
-jumpTimer --; 
-ySpeed ++
-var onGround = place_meeting(x, y + 1, oFloor);
+//if it touches the Player, it does Knockback!!
+if (place_meeting(x+1, y, oPCParent)) {
+	xSpeed *= -1;
+	ySpeed = -5
+	hp--;
+	if (hp==0) {
+		instance_destroy();
+	}
+}
 
-if (jumpTimer <= 0) { 
+var radiusCheck = collision_rectangle(x-1200,y+99999,x+1200,y-99999, oPCParent, false, 1);
+if(radiusCheck){
 
-	xSpeed = 5 * xDirection; 
+	jumpTimer --; 
+	ySpeed ++
+	var onGround = place_meeting(x, y + 1, oFloor);
+
+	if (jumpTimer <= 0) { 
+
+		xSpeed = 5 * xDirection; 
 	
-	//if on the ground, jump
+		//if on the ground, jump
+		if (onGround) {
+			ySpeed = -10;
+			image_index = 1;
+		}
+		//reset timer
+		jumpTimer = 90;
+
+	}//if
+
+	//if on the ground, stay Idle
 	if (onGround) {
-		ySpeed = -10;
-		image_index = 1;
+		image_index = 0;
 	}
-	//reset timer
-	jumpTimer = 90;
 
-}//if
-
-//if on the ground, stay Idle
-if (onGround) {
-	image_index = 0;
-}
-
-//this code keeps the slime in the air untill it collides with something
-//if not on the ground, continue to fall into place
-if (!onGround) {
-	if (place_meeting(x, y + ySpeed, oFloor)) {
-		while (!place_meeting(x, y  + sign(ySpeed) , oFloor)) {
-			y += sign(ySpeed);	
+	//this code keeps the slime in the air untill it collides with something
+	//if not on the ground, continue to fall into place
+	if (!onGround) {
+		//move y untill its on the ground
+		if (place_meeting(x, y + ySpeed, oFloor)) {
+			while (!place_meeting(x, y  + sign(ySpeed) , oFloor)) {
+				y += sign(ySpeed);	
+			}
+			ySpeed = 0;
 		}
-		ySpeed = 0;
-	}
+		//move x untill its on the ground
 		if (place_meeting(x + xSpeed, y, oFloor)) {
-		while (!place_meeting(x + sign(1*xDirection), y , oFloor)) {
-			x += sign(xSpeed);	
+			while (!place_meeting(x + sign(1*xDirection), y , oFloor)) {
+				x += sign(xSpeed);	
+			}
+			xSpeed = 0;
+			xDirection *= -1;
 		}
-		xSpeed = 0;
-		xDirection *= -1;
-	} 
+		
+	}
+	x += xSpeed;
+	y += ySpeed
 }
-x += xSpeed;
-y += ySpeed
