@@ -12,7 +12,9 @@ if(radiusCheck){
 	if (place_meeting(x + 1, y, oPCParent)) {
 		walkSpeed *= -1
 		hp--;
+		
 		if (hp <= 0) {
+			audio_play_sound(sword_Killing, 2, false);
 			instance_destroy();
 		}
 	}

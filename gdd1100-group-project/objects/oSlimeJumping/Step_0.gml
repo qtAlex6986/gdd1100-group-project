@@ -3,7 +3,9 @@ if (place_meeting(x+1, y, oPCParent)) {
 	xSpeed *= -1;
 	ySpeed = -5
 	hp--;
+
 	if (hp==0) {
+		audio_play_sound(sword_Killing, 1, false);
 		instance_destroy();
 	}
 }

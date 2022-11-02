@@ -64,6 +64,7 @@ if (!isHurt) {
 	y += ySpeed;
 } else  if (isHurt) {
 	//add knockback aniamtion
+
 	image_index = 21;
 	//this variable keeps the y moving even if hurt
 	ySpeed++;
@@ -99,10 +100,12 @@ if (!isHurt) {
 //if colliding with enemy, take away halth and isHurt = true
 if (!isHurt && place_meeting(x, y, oEnemyParent)) {
 	isHurt = true;
+	audio_play_sound(sword_hits_armor, 1, false);
 	hp--;
-	//show_message(hp);
 	if(hp==0) {
-		show_message(hp);
+		audio_play_sound(possible_player_death_sound, 1, false);
+		show_message("you died");
+		
 		game_end();
 	}
 	
