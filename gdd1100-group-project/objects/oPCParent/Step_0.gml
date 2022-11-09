@@ -6,7 +6,7 @@
 //right-left. returns -1 for left, returns 1 for right, retrns 0 for not moving
 var xDirection = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 //checking if player hits up arrow
-var jump = keyboard_check_pressed(vk_space);
+var isJumping = keyboard_check_pressed(vk_space);
 //checking to seee if player is on ground
 var onTheGround = place_meeting(x, y + 1, oFloor);
 
@@ -23,42 +23,18 @@ if (!isHurt) {
 
 	//jumping
 	if (onTheGround) {
-		//sprite checking
-		
-		if (xDirection != 0) {
-			if (image_index < 19 ) {
-				image_index++;
-			} else {
-				image_index = 1;
-			}
+		//call jump function. if collection jump boots, extend jump
+		if (jumpBoost && isJumping) {
+			jumpNum = -5;
 		} else {
-			image_index = 0;
+			jumpNum = 0;
 		}
-	
-	
-		if (jump) {
-			ySpeed = -17;
-			
-		}
+		ySpeed = jump(xDirection, ySpeed, isJumping) + jumpNum;
 	}
 
 	//if colliding with Floor stop movement
-	if (place_meeting(x + xSpeed, y, oFloor)){
-	
-		//this loop creates pixel perfect collision
-		while (!place_meeting(x + sign(xSpeed), y , oFloor)) {
-			x += sign(xSpeed);	
-		}
-		xSpeed = 0;	
-	}
-	if (place_meeting(x, y + ySpeed, oFloor)){
-	
-		//this loop creates pixel perfect collision
-		while (!place_meeting(x, y  + sign(ySpeed) , oFloor)) {
-			y += sign(ySpeed);	
-		}
-		ySpeed = 0;	
-	}
+	xSpeed = xMovement(xSpeed, oFloor);
+	ySpeed = yMovement(ySpeed, oFloor);
 
 	x += xSpeed;
 	y += ySpeed;
@@ -74,13 +50,7 @@ if (!isHurt) {
 		xSpeed = 0;
 	} 
 	//if knockback is going to hit the wall, dont let it collide inside
-	if (place_meeting(x, y + ySpeed, oFloor)){
-		//this loop creates pixel perfect collision
-		while (!place_meeting(x, y  + sign(ySpeed) , oFloor)) {
-			y += sign(ySpeed);	
-		}
-		ySpeed = 0;
-	}
+	ySpeed = yMovement(ySpeed, oFloor);
 	
 
 	//decrease speed of knockback

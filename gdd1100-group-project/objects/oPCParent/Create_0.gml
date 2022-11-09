@@ -1,5 +1,5 @@
 isHurt = false;
-hp = 5;
+hp = 10;
 
 
 
@@ -9,3 +9,5 @@ xSpeed = 0;
 ySpeed = 0;
 knockback = 0.9;
 knockbackTimer = knockback;
+jumpBoost = false;
+jumpNum = 0;

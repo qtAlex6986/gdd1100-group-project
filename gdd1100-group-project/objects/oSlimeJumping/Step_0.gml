@@ -40,12 +40,8 @@ if(radiusCheck){
 	//if not on the ground, continue to fall into place
 	if (!onGround) {
 		//move y untill its on the ground
-		if (place_meeting(x, y + ySpeed, oFloor)) {
-			while (!place_meeting(x, y  + sign(ySpeed) , oFloor)) {
-				y += sign(ySpeed);	
-			}
-			ySpeed = 0;
-		}
+		ySpeed = yMovement(ySpeed, oFloor);
+		
 		//move x untill its on the ground
 		if (place_meeting(x + xSpeed, y, oFloor)) {
 			while (!place_meeting(x + sign(1*xDirection), y , oFloor)) {
