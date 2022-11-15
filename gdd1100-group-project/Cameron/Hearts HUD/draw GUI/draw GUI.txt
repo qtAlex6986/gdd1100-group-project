@@ -1,0 +1,18 @@
+sprWidth = sprite_get_width(spr_hearts);
+startX = (room_width / 10) + (sprWidth * 2.5);
+startY = sprite_get_height(spr_hearts); 
+
+for (var hearts = 0; hearts < maxHearts; hearts ++){
+	image = a_hearts[hearts, e_hearts.index]; 
+	xx = startX - (sprWidth * hearts); 
+	
+if (hp_temp != hp_current) && (hp_temp > 0){
+
+shake = irandom_range(-5,5);
+
+} else shake = 0; 
+	
+	
+	
+	draw_sprite(spr_hearts, image, xx, startY);
+}
