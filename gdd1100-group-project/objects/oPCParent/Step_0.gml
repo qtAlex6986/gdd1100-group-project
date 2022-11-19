@@ -10,6 +10,44 @@ var isJumping = keyboard_check_pressed(vk_space);
 //checking to seee if player is on ground
 var onTheGround = place_meeting(x, y + 1, oFloor);
 
+var pickUpWeapon = keyboard_check_pressed(ord("E"));
+
+//Code picks up weapon
+if (pickUpWeapon){
+	//creates list of weapons
+	var pickupList = ds_list_create();
+	var pickupCount = collision_circle_list(x, y, pickupRadius, oWeaponParent, false, true, pickupList, true);
+	
+	//assigns targeted weapon to object ID
+	if(pickupCount > 0) {
+		//first we need to know if we are holding on to a weapon
+		if(weapon == noone) {
+			weapon = pickupList[| 0];
+			
+			weapon.target = id;
+			weapon.isBeingCarried = true;
+			
+		} else {
+			//is holding a weapon
+			for(var i = 0; i < pickupCount; i++) {
+				if (pickupList[| i] != weapon) {
+					//drop original weapon 
+					weapon.target = noone;
+					weapon.isBeingCarried = false;
+					
+					//get new weapon
+					weapon = pickupList[| i];
+					weapon.target = id;
+					weapon.isBeingCarried = true;
+					
+					break;
+				}
+			}
+		}
+	}
+	//destroy list to prevent memory leaks
+	ds_list_destroy(pickupList);
+}
 
 //first checks if the player is hurt. If not then move
 if (!isHurt) {

@@ -11,3 +11,7 @@ knockback = 0.9;
 knockbackTimer = knockback;
 jumpBoost = false;
 jumpNum = 0;
+
+//weapons
+weapon = noone;
+pickupRadius = 50;
