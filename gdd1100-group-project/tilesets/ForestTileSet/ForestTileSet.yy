@@ -1,10 +1,10 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "TileSet1",
+  "name": "ForestTileSet",
   "spriteId": {
-    "name": "sWIP_Brush_Set",
-    "path": "sprites/sWIP_Brush_Set/sWIP_Brush_Set.yy",
+    "name": "Brush_Set",
+    "path": "sprites/Brush_Set/Brush_Set.yy",
   },
   "tileWidth": 32,
   "tileHeight": 32,
@@ -46,9 +46,15 @@
     "SerialiseFrameCount": 1,
   },
   "macroPageTiles": {
-    "SerialiseWidth": 0,
-    "SerialiseHeight": 0,
-    "TileSerialiseData": [],
+    "TileDataFormat": 1,
+    "SerialiseWidth": 4,
+    "SerialiseHeight": 8,
+    "TileCompressedData": [
+      -31,
+      0,
+      1,
+      4,
+    ],
   },
   "parent": {
     "name": "Tile Sets",
