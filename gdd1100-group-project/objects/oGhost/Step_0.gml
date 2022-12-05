@@ -9,12 +9,18 @@ if((collisionRadius)){
 	direction = point_direction(x, y, oPCParent.x  , oPCParent.y - 10 );
 	sprite_index = sGhostFollowing;
 } //If the player is not in this radius, the Ghost sits idle
+else if (collisionRadius && (x - oPCParent.x) < 10 ){
+	speed = 2;
+	direction = point_direction(x, y, oPCParent.x  , oPCParent.y - 10 );
+	sprite_index = sGhostFollowing;
+}
 else {
 	speed = 0;
 	//Maybe add sleep idle? If the pc character is not colliding,
 	// the ghost "sleeps" or sits in place. We can have it move aswell!
 	sprite_index = sGhostIdle;
 }
+
 
 //Controls Sprite Index
 if(hspeed > 0){

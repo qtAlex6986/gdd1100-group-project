@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "gdd1100-group-project",
   "resources": [
+    {"id":{"name":"sToLevel2","path":"sprites/sToLevel2/sToLevel2.yy",},"order":12,},
     {"id":{"name":"sGhostEnemy","path":"sprites/sGhostEnemy/sGhostEnemy.yy",},"order":2,},
     {"id":{"name":"sGhostIdle","path":"sprites/sGhostIdle/sGhostIdle.yy",},"order":0,},
     {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":1,},
@@ -13,6 +14,7 @@
     {"id":{"name":"oSwordIron","path":"objects/oSwordIron/oSwordIron.yy",},"order":3,},
     {"id":{"name":"oPC","path":"objects/oPC/oPC.yy",},"order":1,},
     {"id":{"name":"sSwordStone","path":"sprites/sSwordStone/sSwordStone.yy",},"order":3,},
+    {"id":{"name":"oTeleportToLevel2","path":"objects/oTeleportToLevel2/oTeleportToLevel2.yy",},"order":11,},
     {"id":{"name":"sFloor","path":"sprites/sFloor/sFloor.yy",},"order":10,},
     {"id":{"name":"oWeaponParent","path":"objects/oWeaponParent/oWeaponParent.yy",},"order":1,},
     {"id":{"name":"rLevel1","path":"rooms/rLevel1/rLevel1.yy",},"order":2,},
@@ -28,6 +30,7 @@
     {"id":{"name":"oSpear","path":"objects/oSpear/oSpear.yy",},"order":7,},
     {"id":{"name":"collideY","path":"scripts/collideY/collideY.yy",},"order":1,},
     {"id":{"name":"sHeart","path":"sprites/sHeart/sHeart.yy",},"order":1,},
+    {"id":{"name":"rLevel2","path":"rooms/rLevel2/rLevel2.yy",},"order":3,},
     {"id":{"name":"sGhostFollowing","path":"sprites/sGhostFollowing/sGhostFollowing.yy",},"order":1,},
     {"id":{"name":"oSlimeJumping","path":"objects/oSlimeJumping/oSlimeJumping.yy",},"order":5,},
     {"id":{"name":"oEnemyTest","path":"objects/oEnemyTest/oEnemyTest.yy",},"order":1,},
@@ -36,6 +39,7 @@
     {"id":{"name":"sStrength","path":"sprites/sStrength/sStrength.yy",},"order":4,},
     {"id":{"name":"ForestTileSet","path":"tilesets/ForestTileSet/ForestTileSet.yy",},"order":1,},
     {"id":{"name":"oPopUp","path":"objects/oPopUp/oPopUp.yy",},"order":8,},
+    {"id":{"name":"oCrown","path":"objects/oCrown/oCrown.yy",},"order":10,},
     {"id":{"name":"Arrow_shot","path":"sounds/Arrow_shot/Arrow_shot.yy",},"order":0,},
     {"id":{"name":"sResizedBackground","path":"sprites/sResizedBackground/sResizedBackground.yy",},"order":9,},
     {"id":{"name":"oSwordWood","path":"objects/oSwordWood/oSwordWood.yy",},"order":5,},
@@ -44,6 +48,7 @@
     {"id":{"name":"sSpear","path":"sprites/sSpear/sSpear.yy",},"order":0,},
     {"id":{"name":"sWIP_Brush_Set","path":"sprites/sWIP_Brush_Set/sWIP_Brush_Set.yy",},"order":0,},
     {"id":{"name":"powerup","path":"sounds/powerup/powerup.yy",},"order":5,},
+    {"id":{"name":"sCrown","path":"sprites/sCrown/sCrown.yy",},"order":11,},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":3,},
     {"id":{"name":"sSwordEmerald","path":"sprites/sSwordEmerald/sSwordEmerald.yy",},"order":0,},
     {"id":{"name":"sSlime_Sprite_Sheet","path":"sprites/sSlime_Sprite_Sheet/sSlime_Sprite_Sheet.yy",},"order":0,},
@@ -78,6 +83,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rStartRoom","path":"rooms/rStartRoom/rStartRoom.yy",},},
     {"roomId":{"name":"rLevel1","path":"rooms/rLevel1/rLevel1.yy",},},
+    {"roomId":{"name":"rLevel2","path":"rooms/rLevel2/rLevel2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
