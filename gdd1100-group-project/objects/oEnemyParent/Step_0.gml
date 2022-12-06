@@ -9,7 +9,7 @@ if(radiusCheck){
 	} 
 
 	//if it touches player, go other direction
-	if (place_meeting(x + 1, y, oPCParent)) {
+	if (place_meeting(x + 1, y, oPCParent) || (place_meeting(x + 1, y, oSwordSlash) && oSwordSlash.visible == true) ) {
 		walkSpeed *= -1
 		hp--;
 		

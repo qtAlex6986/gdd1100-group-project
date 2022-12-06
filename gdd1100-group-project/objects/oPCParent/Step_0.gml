@@ -78,7 +78,7 @@ if (!isHurt) {
 	y += ySpeed;
 } else  if (isHurt) {
 	//add knockback aniamtion
-
+	jumpBoost = false;
 	image_index = 21;
 	//this variable keeps the y moving even if hurt
 	ySpeed++;

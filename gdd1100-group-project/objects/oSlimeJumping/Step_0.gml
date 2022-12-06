@@ -1,5 +1,5 @@
 //if it touches the Player, it does Knockback!!
-if (place_meeting(x+1, y, oPCParent)) {
+if (place_meeting(x+1, y, oPCParent) ||(place_meeting(x + 1, y, oSwordSlash) && oSwordSlash.visible == true)) {
 	xSpeed *= -1;
 	ySpeed = -5
 	hp--;

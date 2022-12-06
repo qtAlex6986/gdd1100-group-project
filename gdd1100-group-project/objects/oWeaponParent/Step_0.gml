@@ -1,4 +1,5 @@
 
+
 if(collision_circle(x, y, popupRadius, oPCParent, false, true)){
 
 	popupId.visible = true;
@@ -24,4 +25,7 @@ if (isBeingCarried){
 
 		y = target.y;
 	}
+	
+
+	
 }
