@@ -1,2 +1,2 @@
 paused = false;
-pause_surf = -1;
+paused_surf = -1;

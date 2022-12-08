@@ -1,7 +1,9 @@
 isHurt = false;
 hp = 10;
 
-
+//Paused Stats
+paused = false;
+paused_surf = -1;
 
 //movement
 moveSpeed = 5;

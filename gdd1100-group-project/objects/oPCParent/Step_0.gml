@@ -2,7 +2,6 @@
 
 //this checks if he is hurt
 
-
 //right-left. returns -1 for left, returns 1 for right, retrns 0 for not moving
 var xDirection = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 //checking if player hits up arrow
@@ -118,3 +117,5 @@ if (!isHurt && place_meeting(x, y, oEnemyParent)) {
 	}
 	
 }
+
+
