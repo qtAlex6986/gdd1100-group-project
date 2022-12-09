@@ -60,6 +60,7 @@
     {"id":{"name":"arrow_whiz","path":"sounds/arrow_whiz/arrow_whiz.yy",},"order":1,},
     {"id":{"name":"oEnemyParent","path":"objects/oEnemyParent/oEnemyParent.yy",},"order":4,},
     {"id":{"name":"sPC","path":"sprites/sPC/sPC.yy",},"order":0,},
+    {"id":{"name":"oPause","path":"objects/oPause/oPause.yy",},"order":12,},
     {"id":{"name":"sSwordWood","path":"sprites/sSwordWood/sSwordWood.yy",},"order":1,},
     {"id":{"name":"Brush_Set","path":"sprites/Brush_Set/Brush_Set.yy",},"order":2,},
     {"id":{"name":"sSlimeJump","path":"sprites/sSlimeJump/sSlimeJump.yy",},"order":1,},

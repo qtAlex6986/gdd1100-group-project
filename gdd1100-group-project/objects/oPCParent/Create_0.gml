@@ -4,6 +4,8 @@ hp = 10;
 //Paused Stats
 paused = false;
 paused_surf = -1;
+pausedx = 0;
+pausedy = 0;
 
 //movement
 moveSpeed = 5;

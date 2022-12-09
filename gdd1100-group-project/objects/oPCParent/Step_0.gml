@@ -119,3 +119,4 @@ if (!isHurt && place_meeting(x, y, oEnemyParent)) {
 }
 
 
+
