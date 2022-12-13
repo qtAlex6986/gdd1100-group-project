@@ -3,3 +3,5 @@ Ghost Enemy Movement Code: https://gamemaker.io/en/tutorials/heros-trail-dnd-4#s
 Gravity/Movement Code, Viewpoints, Tilesets : https://www.youtube.com/watch?v=uKXCI1qC_LQ&
 
 Autotiling Template : https://gamemaker.io/en/blog/practical-guide-tiles 
+
+Pause Menu Help : https://www.youtube.com/watch?v=dNiLIX8jNOM

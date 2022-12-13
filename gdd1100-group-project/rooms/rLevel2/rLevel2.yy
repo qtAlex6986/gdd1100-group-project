@@ -35,6 +35,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3E41E3E4","properties":[],"isDnd":false,"objectId":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":64.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3856784E","properties":[],"isDnd":false,"objectId":{"name":"oPC","path":"objects/oPC/oPC.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":3.4615383,"scaleY":3.064516,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":526.7692,"y":478.96774,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7200C9F7","properties":[],"isDnd":false,"objectId":{"name":"oShoe","path":"objects/oShoe/oShoe.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":480.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_78AF8C6C","properties":[],"isDnd":false,"objectId":{"name":"oPause","path":"objects/oPause/oPause.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":32.0,},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"ForestTileSet","tilesetId":{"name":"ForestTileSet","path":"tilesets/ForestTileSet/ForestTileSet.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":86,"SerialiseHeight":25,"TileCompressedData":[
 -2,4,-82,-2147483648,-4,4,-82,-2147483648,-4,4,-82,-2147483648,-2,4,-2,2,-82,-2147483648,-2,4,-2,2,-75,-2147483648,-9,4,-2,2,-75,-2147483648,-9,4,-2,2,-82,-2147483648,1,0,-3,2,-82,-2147483648,1,0,-3,2,-82,-2147483648,1,0,-3,2,-77,-2147483648,1,0,-3,-2147483648,-2,0,-3,2,-65,-2147483648,-3,0,-10,4,-3,-2147483648,-2,0,-3,2,-68,-2147483648,-10,4,-4,-2147483648,-4,2,-25,-2147483648,-19,1,
@@ -90,6 +91,7 @@
     {"name":"inst_3CDFA5E3","path":"rooms/rLevel2/rLevel2.yy",},
     {"name":"inst_30D4FAE8","path":"rooms/rLevel2/rLevel2.yy",},
     {"name":"inst_5BE54D3D","path":"rooms/rLevel2/rLevel2.yy",},
+    {"name":"inst_78AF8C6C","path":"rooms/rLevel2/rLevel2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
