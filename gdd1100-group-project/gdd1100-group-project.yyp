@@ -72,7 +72,6 @@
     {"id":{"name":"sWeapons","path":"sprites/sWeapons/sWeapons.yy",},"order":3,},
     {"id":{"name":"oPauseMenu","path":"objects/oPauseMenu/oPauseMenu.yy",},"order":4,},
     {"id":{"name":"sMenu","path":"sprites/sMenu/sMenu.yy",},"order":2,},
-    {"id":{"name":"weaponPickup","path":"scripts/weaponPickup/weaponPickup.yy",},"order":3,},
     {"id":{"name":"gun_pickup","path":"sounds/gun_pickup/gun_pickup.yy",},"order":2,},
     {"id":{"name":"rStartRoom","path":"rooms/rStartRoom/rStartRoom.yy",},"order":0,},
   ],
